@@ -7,8 +7,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/rpc"
+	"github.com/sgtsquiggs/sqlc/internal/config"
+	"github.com/sgtsquiggs/sqlc/internal/rpc"
 )
 
 const defaultHostname = "remote.sqlc.dev"

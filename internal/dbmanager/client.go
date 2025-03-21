@@ -11,9 +11,9 @@ import (
 	"github.com/jackc/pgx/v5"
 	"golang.org/x/sync/singleflight"
 
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/pgx/poolcache"
-	"github.com/sqlc-dev/sqlc/internal/shfmt"
+	"github.com/sgtsquiggs/sqlc/internal/config"
+	"github.com/sgtsquiggs/sqlc/internal/pgx/poolcache"
+	"github.com/sgtsquiggs/sqlc/internal/shfmt"
 )
 
 type CreateDatabaseRequest struct {
