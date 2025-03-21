@@ -11,14 +11,14 @@ import (
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	core "github.com/sqlc-dev/sqlc/internal/analysis"
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/dbmanager"
-	"github.com/sqlc-dev/sqlc/internal/opts"
-	"github.com/sqlc-dev/sqlc/internal/shfmt"
-	"github.com/sqlc-dev/sqlc/internal/sql/ast"
-	"github.com/sqlc-dev/sqlc/internal/sql/named"
-	"github.com/sqlc-dev/sqlc/internal/sql/sqlerr"
+	core "github.com/sgtsquiggs/sqlc/internal/analysis"
+	"github.com/sgtsquiggs/sqlc/internal/config"
+	"github.com/sgtsquiggs/sqlc/internal/dbmanager"
+	"github.com/sgtsquiggs/sqlc/internal/opts"
+	"github.com/sgtsquiggs/sqlc/internal/shfmt"
+	"github.com/sgtsquiggs/sqlc/internal/sql/ast"
+	"github.com/sgtsquiggs/sqlc/internal/sql/named"
+	"github.com/sgtsquiggs/sqlc/internal/sql/sqlerr"
 )
 
 type Analyzer struct {
@@ -58,7 +58,7 @@ SELECT
     pg_class.relname as table_name,
     pg_namespace.nspname as schema_name
 FROM
-    pg_catalog.pg_class 
+    pg_catalog.pg_class
 JOIN
     pg_catalog.pg_namespace ON pg_namespace.oid = pg_class.relnamespace
 WHERE
