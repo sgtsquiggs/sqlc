@@ -9,3 +9,5 @@ __pycache__
 .devenv*
 devenv.local.nix
 
+# Added by goreleaser init:
+dist/
